@@ -1,12 +1,31 @@
 import React from 'react'
 
-const Profile = () => (
- <div className="Profile-wrapper">
-   <h1>Dani Jardim</h1>
-   <h2>Developer</h2>
-   <p>danidjielajfal fui contratada pela thoughtworks :)  </p>
+import { StaticQuery, graphql } from 'gatsby'
 
- </div>
+const Profile = () => (
+  <StaticQuery
+    query={graphql`
+    query MySiteMetadata {
+      site{
+        siteMetadata{
+          title
+          position
+          description
+        }
+      }
+    }
+  `}
+
+  render={data => (
+    <div className="Profile-wrapper">
+      <h1>{data.site.siteMetadata.title}</h1>
+      <h2>{data.site.siteMetadata.position}r</h2>
+      <p>{data.site.siteMetadata.description}</p>
+    </div>
+  )}
+  
+  />
+    
 )
 
 export default Profile
