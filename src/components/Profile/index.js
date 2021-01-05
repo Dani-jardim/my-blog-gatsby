@@ -20,10 +20,10 @@ query MySiteMetadata {
   `)
   return (
     <div className="Profile-wrapper">
-    <h1>{title}</h1>
-    <h2>{position}r</h2>
-    <p>{description}</p>
-  </div>
+      <h1>{title}</h1>
+      <h2>{position}r</h2>
+      <p>{description}</p>
+    </div>
   )
 
 }
