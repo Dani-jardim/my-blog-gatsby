@@ -3,7 +3,7 @@ date: 2021-01-20 10:00:23
 title: Segundo post para exemplo
 description: And I'm not sure about the universe.
 category: Misc
-background: "#7AAB13"
+background: "yellow"
 ---
 
 # Lorem ipsum
