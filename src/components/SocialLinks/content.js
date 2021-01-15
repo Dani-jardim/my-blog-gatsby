@@ -18,8 +18,8 @@ const links = [
     url: `https://www.instagram.com/${handle}`,
   },
   {
-    label: "Unsplash",
-    url: `https://unsplash.com/${handle}`,
+    label: "Linkedin",
+    url: `https://linkedin.com/${handle}`,
   },
 ]
 
