@@ -1,4 +1,3 @@
-const handle = "Daniela"
 
 const links = [
   {
